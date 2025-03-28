@@ -7,12 +7,13 @@ package org.npd.starspost.dao;
 
 import java.util.function.Consumer;
 
-import edu.itstep.app.modules.entities.BaseEntity;
-import edu.itstep.app.modules.models.Model;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import org.npd.starspost.entities.BaseEntity;
+import org.npd.starspost.models.Model;
+
 /**
  *
  * @author midas
@@ -53,7 +54,7 @@ public abstract class AbstractDao {
 		return statusTransaction;
 	}
 
-	public static String getPERSISTANCE_UNITS() {
+	public static String getPersistanceUnits() {
 		return AbstractDao.PERSISTANCE_UNITS;
 	}
 
